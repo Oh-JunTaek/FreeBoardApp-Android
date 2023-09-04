@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="newpw" type="id" />
+    <item name="newid" type="id" />
+    <item name="newe" type="id" />
+    <item name="newp" type="id" />
+    <item name="newbtn" type="id" />
+</resources>
