@@ -3,21 +3,26 @@ package com.example.test2
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.test2.databinding.ActivityMainBinding
-import android.view.View;
-import android.widget.Button;
 
 
 class MainActivity : AppCompatActivity() {
 
     private var mBinding: ActivityMainBinding? = null;
     private val binding get() = mBinding!!;
+    private var binding: ActivityMainBinding? = null
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater);
         setContentView(binding.root);
+
+
 
         binding.test.setText("게시판");
         binding.btnLogin.setOnClickListener {
@@ -27,11 +32,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             binding.btnNew.setOnClickListener{
-                Intent intent =New Intent(MainActivity,newjoin.class)
+
 
                 startActivity(intent);
 
             }
+
 
         }
         }
